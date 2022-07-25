@@ -1,10 +1,12 @@
 const {
+    returnTwo,
     greeting, 
     add 
     } = require('./functions')
 
-test("should run", () => expect(2).toBe(2));
-
+test("should run", () => {
+    expect(returnTwo()).toBe(2);
+}),
 describe("greeting tests", () => {
     test("greeting should equal hello james", () => {
         expect(greeting('James')).toEqual('Hello, James.')

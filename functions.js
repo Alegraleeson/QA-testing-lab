@@ -1,5 +1,7 @@
 module.exports = {
-    returnTwo: () => 2,
+    returnTwo: () => {
+        return 2
+    },
 
     greeting: (name) => {
         return "Hello, " + name + "." 
